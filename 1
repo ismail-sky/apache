@@ -7,6 +7,6 @@ defaults:  # Used for any hierarchy level that omits these keys.
 
 hierarchy:
   - name: "osfamily/major release"
-    path: '%{facts.os.family}.yaml'
+    paths: "%{::osfamily}.yaml"
   - name: 'common'
     path: 'common.yaml'
